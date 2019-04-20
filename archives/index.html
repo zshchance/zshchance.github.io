@@ -14,8 +14,10 @@
     
     
     
-    <title>Archives | 小煤球摄影</title>
+    <title>列表 | 小煤球摄影</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content>
@@ -29,8 +31,8 @@
     
         <link rel="alternate" type="application/atom+xml" title="小煤球摄影" href="/atom.xml">
     
-    <link rel="shortcut icon" href="/">
-    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
 
     <!-- custom head -->
@@ -46,45 +48,66 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(/)">
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/">
+          <img src="https://ws1.sinaimg.cn/large/3ede006dgy1g2975qm6xqj20sm0svmyt.jpg">
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">小煤球</h5>
-          <a href="mailto:undefined" class="mail">
-        </a></hgroup>
+          <a href="mailto:911847985@qq.com" title="911847985@qq.com" class="mail">911847985@qq.com</a>
+        </hgroup>
       </div>
     </div>
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/">
                 <i class="icon icon-lg icon-home"></i>
-                Home
+                主页
               </a>
             </li>
         
             <li class="waves-block waves-effect active">
-              <a href="/">
+              <a href="/archives">
                 <i class="icon icon-lg icon-archives"></i>
-                Archives
+                列表
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
-              <a href="/">
+            <li class="waves-block waves-effect">
+              <a href="/tags/随拍">
                 <i class="icon icon-lg icon-tags"></i>
-                Tags
+                标签
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
-              <a href="/">
-                <i class="icon icon-lg icon-categories"></i>
-                Categories
+            <li class="waves-block waves-effect">
+              <a href="/categories/摄影">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/5694670921/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1" target="_blank">
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://xiaomeiqiu888.lofter.com/" target="_blank">
+                <i class="icon icon-lg icon-lofter"></i>
+                Lofter
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://www.douban.com/people/meilixiaoyao/" target="_blank">
+                <i class="icon icon-lg icon-douban"></i>
+                豆瓣
               </a>
             </li>
         
@@ -99,15 +122,29 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis"></div>
+        <div class="flex-col header-title ellipsis">列表</div>
         
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
         
     </div>
 </header>
 <header class="content-header archives-header">
 
     <div class="container fade-scale">
-        <h1 class="title"></h1>
+        <h1 class="title">列表</h1>
         <h5 class="subtitle">
             
         </h5>
@@ -338,6 +375,15 @@
         <footer class="footer">
     <div class="top">
         
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
 
         <p>
             
@@ -347,7 +393,7 @@
         </p>
     </div>
     <div class="bottom">
-        <p><span>小煤球 &copy; 2019</span>
+        <p><span>小煤球 &copy; 2018 - 2019</span>
             <span>
                 
                 Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
@@ -361,21 +407,106 @@
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://silly.ink/archives/&title=小煤球摄影&pic=https://ws1.sinaimg.cn/large/3ede006dgy1g2975qm6xqj20sm0svmyt.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://silly.ink/archives/&title=小煤球摄影&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://silly.ink/archives/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=小煤球摄影&url=https://silly.ink/archives/&via=https://silly.ink" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://silly.ink/archives/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABuUlEQVR42u3aQY4DIQwEwPz/07PSXldBbTuwRCpOOTCkZg4tsHm94vH8jmROMjNfszlwcXHH3Gc51ku/m//3qfWaiQEXF/c8dx001ZBaP1X9HLi4uDdze/uNaqjh4uJ+FzeJs2QmLi7ut3CTw08Cnc//2FkNFxd3wK0WN3f83ljfxcXFLXKf4siPRskmpvzvuLi4R7jrhfIkqTZQky3U2xVwcXGPcOeXKvLI630UXFzc/+Lmf1Ntpk42RoUqLy4u7gbuvPLQ28qMchcXF3cDN4+SXj0zD6noKVxc3IPcvL26+/pFdODBxcW9gNs76lSvXuHi4t7PnTROJtet1hJcXNwz3CSAkgLop65xRKVVXFzczdy86Jk0QpIwmmyDcHFxz3BzRK/0WW2iRMGKi4u7mZtESbWcMQlHXFzce7jJor3CaO9lCj1hXFzcbdxqOaNXSE1epny/AxcXdwO3Gih5kFWLHcmL4eLinuTm4VVtqFTbMLi4uLdx80POZ18jP3Th4uLeyZ1sa3rN2lGQ4eLiHuT2EmYdc4WDEy4u7kHu5PJEtaEyCjtcXNwj3GrBNGqIFtsquLi413B/AP2/OL+y2hwbAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: , REWARD: false };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 </script>
 
-<script src="/js/main.min.js?v=1.7.2"></script>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
 
 
 
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '去哪里了？';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
 
 
 
